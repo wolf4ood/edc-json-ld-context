@@ -1,0 +1,27 @@
+[metadata]
+format.version = "1.1"
+
+[versions]
+assertj = "3.24.2"
+awaitility = "4.2.0"
+edc = "0.2.2-SNAPSHOT"
+jakarta-json = "2.0.1"
+junit-pioneer = "2.1.0"
+jupiter = "5.10.0"
+
+[libraries]
+assertj = { module = "org.assertj:assertj-core", version.ref = "assertj" }
+awaitility = { module = "org.awaitility:awaitility", version.ref = "awaitility" }
+edc-build-plugin = { module = "org.eclipse.edc.edc-build:org.eclipse.edc.edc-build.gradle.plugin", version.ref = "edc" }
+edc-json-ld = { module = "org.eclipse.edc:json-ld", version.ref = "edc" }
+edc-junit = { module = "org.eclipse.edc:junit", version.ref = "edc" }
+edc-spi-core = { module = "org.eclipse.edc:core-spi", version.ref = "edc" }
+edc-core-transform = { module = "org.eclipse.edc:transform-core", version.ref = "edc" }
+jakartaJson = { module = "org.glassfish:jakarta.json", version.ref = "jakarta-json" }
+junit-jupiter-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "jupiter" }
+junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "jupiter" }
+junit-jupiter-params = { module = "org.junit.jupiter:junit-jupiter-params", version.ref = "jupiter" }
+junit-pioneer = { module = "org.junit-pioneer:junit-pioneer", version.ref = "junit-pioneer" }
+
+[plugins]
+shadow = { id = "com.github.johnrengelman.shadow", version = "8.1.1" }
